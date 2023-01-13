@@ -1,15 +1,11 @@
 // User Interface Logic
 function handleSubmission(event) {
   event.preventDefault();
+
   const answerQ01 = document.querySelector("input[name='q01']:checked").value;
   const answerQ02 = document.querySelector("input[name='q02']:checked").value;
   const answerQ03 = document.querySelector("input[name='q03']:checked").value;
   const answerQ04 = document.querySelector("input[name='q04']:checked").value;
-
-  if (answerQ01 === "null" || answerQ02 === "null"  || answerQ03 === "null" || answerQ04 === "null"){
-  error.removeAttribute("class");
-  }
-  
 
   let javascript = document.getElementById("javascript");
   let python = document.getElementById("python");
@@ -17,25 +13,21 @@ function handleSubmission(event) {
   let ruby = document.getElementById("ruby");
   let swift = document.getElementById("swift");
   let rust = document.getElementById("rust");
-  let error = document.getElementById("error");
   
-  // if(!answerQ01 || !answerQ02 || !answerQ03){
-  //   document.getElementById("error").removeAttribute("class");
-  // }
 
-  if(answerQ01 === "none" && answerQ02 === "app" || "game" && answerQ03 === "weeks"){
+  if(answerQ01 === "none" && answerQ02 === "app" || answerQ01 === "none" && answerQ02 === "game"){
     javascript.removeAttribute("class");
   }
     
-  else if(answerQ01 ==="none" && answerQ02 === "data" && answerQ03 === "weeks"){
+  else if(answerQ01 ==="none" && answerQ02 === "data"){
     python.removeAttribute("class");
   }
 
-  else if(answerQ01="some" && answerQ02 === "game" || "app"){
+  else if(answerQ01="some" && answerQ02 === "game" || answerQ01="some" && answerQ02="app"){
     cSharp.removeAttribute("class");
   }
 
-  else if("alot" === answerQ01 && answerQ02 === "app" || "game"){
+  else if(answerQ01==="alot" && answerQ02 ==="app" || answerQ01==="alot" && answerQ02 "game"){
     ruby.removeAttribute("class");
   }
   
@@ -43,7 +35,7 @@ function handleSubmission(event) {
     swift.removeAttribute("class");
   }
   
-  else if(answerQ02 === "data" && answerQ03 === "months"){
+  else if(answerQ01 != "none" && answerQ02 === "data"){
     rust.removeAttribute("class");
   }
 
