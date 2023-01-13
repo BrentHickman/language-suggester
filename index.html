@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+<body>
+  <h1>Programming Language Suggester</h1>
+  <h2>Please fill out the survey below to find out which programming laguage to learn next</h2>
+  <form id="survey">
+    <Label for="name">
+      <input id="name" type="text">What is your name?
+    <label>
+    <p>How much programming experience do you have?</p>
+      <input type="radio" name="q01" value="none" id="none">
+      None
+    </label>
+    <label>
+      <input type="radio" name="q01" value="some" id="some">
+      Some
+    </label>
+    <label>
+      <input type="radio" name="q01" value="alot" id="alot">
+      A lot
+    </label>
+    <button type="submit" class="button">Submit</button>
+  </form>
+  <br>
+  <br>
+  <p class="hidden" id="javascript"><em>Javascript</em></p>
+  <p class="hidden" id="python"><em>Python</em></p>
+  <p class="hidden" id="cSharp"><em>C#</em></p>
+  <p class="hidden" id="ruby"><em>Ruby</em></p>
+  <p class="hidden" id="swift"><em>Swift</em></p>
+  <p class="hidden" id="rust"><em>Rust</em></p>
+  <p class="hidden" id="error">Please fill all fields</p>
+
+</body>
+</html>
