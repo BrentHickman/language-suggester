@@ -1,20 +1,24 @@
 // User Interface Logic
 function handleSubmission(event) {
   event.preventDefault();
-  const selected = document.querySelector("input[name='q01']:checked").value;
-  let none = document.getElementById("javascript");
-  let some = document.getElementById("cSharp");
-  let alot = document.getElementById("rust");
+  const answerQ01 = document.querySelector("input[name='q01']:checked").value;
+  // const answerQ02 = document.querySelector("input[name='q02']:checked").value;
+  // const answerQ03 = document.querySelector("input[name='q03']:checked").value;
+
+
+  let javascript = document.getElementById("javascript");
+  let cSharp = document.getElementById("cSharp");
+  let rust = document.getElementById("rust");
   
-  if("none" === selected){
-    none.removeAttribute("class");
+  if("none" === answerQ01){
+    javascript.removeAttribute("class");
   }
     
-  else if("some" === selected){
-    some.removeAttribute("class");
+  else if("some" === answerQ01){
+    cSharp.removeAttribute("class");
   }
-  else if("alot" === selected){
-    alot.removeAttribute("class");
+  else if("alot" === answerQ01){
+    rust.removeAttribute("class");
   }
 }
 window.addEventListener("load", function() {
