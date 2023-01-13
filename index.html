@@ -10,25 +10,29 @@
   <h1>Programming Language Suggester</h1>
   <h2>Please fill out the survey below to find out which programming laguage to learn next</h2>
   <form id="survey">
-    <Label for="name">
-      <input id="name" type="text">What is your name?
+    <Label for="name">What is your name?
+      <input id="name" type="text">
     <label>
-    <p>How much programming experience do you have?</p>
+    <p>How much programming experience do you have?
       <input type="radio" name="q01" value="none" id="none">
       None
-    </label>
-    <label>
-      <input type="radio" name="q01" value="some" id="some">
-      Some
-    </label>
-    <label>
-      <input type="radio" name="q01" value="alot" id="alot">
-      A lot
-    </label>
+      </label>
+      <label>
+        <input type="radio" name="q01" value="some" id="some">
+        Some
+      </label>
+      <label>
+        <input type="radio" name="q01" value="alot" id="alot">
+        A lot
+      </label>
+    </p>
+  <br>
     <button type="submit" class="button">Submit</button>
   </form>
   <br>
   <br>
+  <h2>Results</h2>
+  <p id="output"></p>
   <p class="hidden" id="javascript"><em>Javascript</em></p>
   <p class="hidden" id="python"><em>Python</em></p>
   <p class="hidden" id="cSharp"><em>C#</em></p>
