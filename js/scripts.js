@@ -19,19 +19,19 @@ function handleSubmission(event) {
     javascript.removeAttribute("class");
   }
     
-  else if(answerQ01 ==="none" && answerQ02 === "data"){
+  else if(answerQ01 === "none" && answerQ02 === "data"){
     python.removeAttribute("class");
   }
 
-  else if(answerQ01="some" && answerQ02 === "game" || answerQ01="some" && answerQ02="app"){
+  else if(answerQ01 === "some" && answerQ02 === "game" || answerQ01 ==="some" && answerQ02 ==="app"){
     cSharp.removeAttribute("class");
   }
 
-  else if(answerQ01==="alot" && answerQ02 ==="app" || answerQ01==="alot" && answerQ02 "game"){
+  else if(answerQ01=== "alot" && answerQ02 === "game"){
     ruby.removeAttribute("class");
   }
   
-  else if("some" === answerQ01 && answerQ02 === "app"){
+  else if("alot" === answerQ01 && answerQ02 === "app"){
     swift.removeAttribute("class");
   }
   
