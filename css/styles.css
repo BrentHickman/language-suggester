@@ -5,3 +5,38 @@
 #error {
   color: red;
 }
+
+body {
+  width: 75%;
+  height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkolivegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+  border: 5px solid black;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: larger;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+label {
+  margin: auto;
+}
