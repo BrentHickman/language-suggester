@@ -13,6 +13,9 @@ function handleSubmission(event) {
   let ruby = document.getElementById("ruby");
   let swift = document.getElementById("swift");
   let rust = document.getElementById("rust");
+  let result = document.getElementById('result');
+
+  result.removeAttribute("class");
   
 
   if(answerQ01 === "none" && answerQ02 === "app" || answerQ01 === "none" && answerQ02 === "game"){
@@ -35,20 +38,33 @@ function handleSubmission(event) {
     swift.removeAttribute("class");
   }
   
-  else if(answerQ01 != "none" && answerQ02 === "data"){
+  else if(answerQ01 !== "none" && answerQ02 === "data"){
     rust.removeAttribute("class");
   }
-
 }
 
-function resetSubmission(event) {
-  event.preventDefault(reset);
+const resetResult = () => {
+  location.reload();}
+//   }
+//   const reHide = document.getElementById('result');
 
-}
+//   reHide.setAttribute('class', 'hidden');
+// }
+
+// function resetClass() {
+
+//   const hidden = document.createAttribute("class");
+//   hidden.value = "hidden";
+
+//   const resetResult = document.getElementsByName("result");
+//   resetResult.foreachsetAttributeNode(hidden);
+
+// }
+
+
 window.addEventListener("load", function() {
   const form = document.getElementById("survey");
   form.addEventListener("submit", handleSubmission);
-  form.removeEventListener("submit", resetSubmission);
+  form.addEventListener("reset", resetResult);
+
 });
-
-

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
   <script src="/js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
@@ -26,66 +26,68 @@
       <input type="radio" name="q01" value="alot" id="alot">
         A lot
     </label>
-  <br>
-  <br>
-  <br>
-  <p>What do you want to program?</p>
-  <label>
-      <input type="radio" name="q02" value="data" id="data" checked="checked">
-    Data
-  </label>
-  <label>
-    <input type="radio" name="q02" value="app" id="app">
-    App
-  </label>
-  <label>
-    <input type="radio" name="q02" value="game" id="game">
-    Game
-  </label>
-<br>
-<br>
-<br>
-<p>How much time do you have?</p>
-<label>
-  <input type="radio" name="q03" value="weeks" id="weeks" checked="checked">
-  Weeks
-</label>
-<label>
-  <input type="radio" name="q03" value="months" id="months">
-  Months
-</label>
-<br>
-<br>
-<br>
-<p>What operating system does your computer have?</p>
-<label>
-  <input type="radio" name="q04" value="mac" id="mac" checked="checked">
-  Mac OS
-</label>
-<label>
-  <input type="radio" name="q04" value="win" id="windows">
-  Windows
-</label>
-<label>
-  <input type="radio" name="q04" value="other" id="other">
-  Other
-</label>
-<br>
-<br>
-<br>
-    <button type="submit" class="button">Submit</button>
+    <br>
+    <br>
+    <br>
+    <p>What do you want to program?</p>
+    <label>
+        <input type="radio" name="q02" value="data" id="data" checked="checked">
+      Data
+    </label>
+    <label>
+      <input type="radio" name="q02" value="app" id="app">
+      App
+    </label>
+    <label>
+      <input type="radio" name="q02" value="game" id="game">
+      Game
+    </label>
+    <br>
+    <br>
+    <br>
+    <p>How much time do you have?</p>
+    <label>
+      <input type="radio" name="q03" value="weeks" id="weeks" checked="checked">
+      Weeks
+    </label>
+    <label>
+      <input type="radio" name="q03" value="months" id="months">
+      Months
+    </label>
+    <br>
+    <br>
+    <br>
+    <p>What operating system does your computer have?</p>
+    <label>
+      <input type="radio" name="q04" value="mac" id="mac" checked="checked">
+      Mac OS
+    </label>
+    <label>
+      <input type="radio" name="q04" value="win" id="windows">
+      Windows
+    </label>
+    <label>
+      <input type="radio" name="q04" value="other" id="other">
+      Other
+    </label>
+    <br>
+    <br>
+    <br>
+      <button type="submit" class="button">Submit</button>
+      <input type="reset" class="button">
   </form>
   <br>
   <br>
   <h2>Results</h2>
-  <p id="output"></p>
-  <p class="hidden" id="javascript"><em>Javascript</em></p>
-  <p class="hidden" id="python"><em>Python</em></p>
-  <p class="hidden" id="cSharp"><em>C#</em></p>
-  <p class="hidden" id="ruby"><em>Ruby</em></p>
-  <p class="hidden" id="swift"><em>Swift</em></p>
-  <p class="hidden" id="rust"><em>Rust</em></p>
-  <p class="hidden" id="error">Please fill all fields</p>
-
+  <p id="output">
+    <div id="result">
+    <p class="hidden" id="javascript"><em>Javascript</em></p>
+    <p class="hidden" id="python"><em>Python</em></p>
+    <p class="hidden" id="cSharp"><em>C#</em></p>
+    <p class="hidden" id="ruby"><em>Ruby</em></p>
+    <p class="hidden" id="swift"><em>Swift</em></p>
+    <p class="hidden" id="rust"><em>Rust</em></p>
+    </div>
+  </p>
 </body>
 </html>
