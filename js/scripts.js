@@ -13,9 +13,6 @@ function handleSubmission(event) {
   let ruby = document.getElementById("ruby");
   let swift = document.getElementById("swift");
   let rust = document.getElementById("rust");
-  let result = document.getElementById('result');
-
-  result.removeAttribute("class");
   
 
   if(answerQ01 === "none" && answerQ02 === "app" || answerQ01 === "none" && answerQ02 === "game"){
@@ -41,30 +38,21 @@ function handleSubmission(event) {
   else if(answerQ01 !== "none" && answerQ02 === "data"){
     rust.removeAttribute("class");
   }
-}
 
-const resetResult = () => {
-  location.reload();}
-//   }
-//   const reHide = document.getElementById('result');
-
-//   reHide.setAttribute('class', 'hidden');
-// }
-
-// function resetClass() {
-
-//   const hidden = document.createAttribute("class");
-//   hidden.value = "hidden";
-
-//   const resetResult = document.getElementsByName("result");
-//   resetResult.foreachsetAttributeNode(hidden);
-
-// }
-
+};
 
 window.addEventListener("load", function() {
   const form = document.getElementById("survey");
   form.addEventListener("submit", handleSubmission);
-  form.addEventListener("reset", resetResult);
 
+});
+
+///reset button
+window.addEventListener("reset", function() {
+  document.getElementById("javascript").classList.add("hidden");
+  document.getElementById("python").classList.add("hidden");
+  document.getElementById("cSharp").classList.add("hidden");
+  document.getElementById("ruby").classList.add("hidden");
+  document.getElementById("swift").classList.add("hidden");
+  document.getElementById("rust").classList.add("hidden");
 });
