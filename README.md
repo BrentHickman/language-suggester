@@ -28,7 +28,7 @@ _This is a Survey to help users decide which programming laguage to learn based 
 
 ## Known Bugs
 
-* Form does not clear when resubmitting. Use reset button for now when filling out the survey for a second (or third, fourth, ect...) time.
+* none as of latest release on 1/22/2023
 
 ## License
 
