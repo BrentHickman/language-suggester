@@ -17,12 +17,9 @@ _This is a Survey to help users decide which programming laguage to learn based 
 
 ## Setup/Installation Requirements
 
-* Launch Browser of choice
-* Type 'https://brenthickman.github.io/language-suggester/' into the address bar
-* Press enter
-* Read and answer the survey questions
-* Click 'submit' to see results
-* Click 'reset' to take the survey again.
+* Clone this repository to your desktop
+* Navigate to the top level of the directory.
+* Open index.html in your browser.
 
 
 
