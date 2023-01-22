@@ -15,7 +15,7 @@
 
 _This is a Survey to help users decide which programming laguage to learn based on their answers.
 
-## Setup/Installation Requirements
+## Setup Instructions
 
 * Clone this repository to your desktop
 * Navigate to the top level of the directory.
